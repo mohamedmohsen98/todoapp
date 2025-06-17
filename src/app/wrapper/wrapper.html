@@ -1,0 +1,7 @@
+<app-app-form (dataEvent)="recieveTasks($event)"></app-app-form>
+<app-renderlist [items]="tasks"
+  (cT)="evaluateComplete($event)"
+  (uT)="evaluateUpdate($event)"
+  (dT)="evaluateDelete($event)"></app-renderlist>
+
+

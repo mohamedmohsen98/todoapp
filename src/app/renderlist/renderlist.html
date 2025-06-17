@@ -1,0 +1,11 @@
+<ul>
+  @for (task of items; track task.title) {
+    <li [class.completed]="task.status">{{ task.title }}
+      <button (click)="checkTask(task.id)">COMPLETE</button>
+      <button (click)="updateTask(task.id)">UPDATE</button>
+      <button (click)="deleteTask(task.id)">DELETE</button>
+    </li>
+  }
+</ul>
+
+
